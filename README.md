@@ -75,11 +75,9 @@ sistema-gestion-veterinaria/
 ### 4.1 Clonar el repositorio
 
 ```bash
-git clone URL_DEL_REPOSITORIO
+git clone https://github.com/salas-araya-444/sistema-gestion-veterinaria.git
 cd sistema-gestion-veterinaria
 ```
-
-> Sustituir `URL_DEL_REPOSITORIO` por la dirección real del repositorio en GitHub.
 
 ### 4.2 Crear el entorno virtual
 
