@@ -101,7 +101,41 @@
       "response": []
     },
     {
-      "name": "04 - GET Mascota inexistente",
+      "name": "04 - POST Crear consulta válida",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"mascota\": 1,\r\n    \"motivo\": \"Control general\",\r\n    \"diagnostico\": \"Mascota en buen estado\",\r\n    \"tratamiento\": \"Control preventivo\",\r\n    \"costo\": \"15000.00\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/clinica/api/consultas/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "clinica",
+            "api",
+            "consultas",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "05 - GET Mascota inexistente",
       "request": {
         "method": "GET",
         "header": [],
@@ -127,7 +161,7 @@
       "response": []
     },
     {
-      "name": "05 - PATCH Actualizar Simba",
+      "name": "06 - PATCH Actualizar Simba",
       "request": {
         "method": "PATCH",
         "header": [],
@@ -162,7 +196,7 @@
       "response": []
     },
     {
-      "name": "06 - GET Página 2",
+      "name": "07 - GET Página 2",
       "request": {
         "method": "GET",
         "header": [],
@@ -193,7 +227,7 @@
       "response": []
     },
     {
-      "name": "07 - GET Filtrar perros",
+      "name": "08 - GET Filtrar perros",
       "request": {
         "method": "GET",
         "header": [],
@@ -224,7 +258,7 @@
       "response": []
     },
     {
-      "name": "08 - POST Error costo negativo",
+      "name": "09 - POST Error costo negativo",
       "request": {
         "method": "POST",
         "header": [],
@@ -258,7 +292,7 @@
       "response": []
     },
     {
-      "name": "09 - GET Perfil sin token",
+      "name": "10 - GET Perfil sin token",
       "request": {
         "method": "GET",
         "header": [],
@@ -316,7 +350,7 @@
       "response": []
     },
     {
-      "name": "10 - GET Perfil con token",
+      "name": "11 - GET Perfil con token",
       "request": {
         "method": "GET",
         "header": [
@@ -346,7 +380,7 @@
       "response": []
     },
     {
-      "name": "11 - GET Estadísticas operador",
+      "name": "12 - GET Estadísticas operador",
       "request": {
         "method": "GET",
         "header": [
@@ -409,7 +443,7 @@
       "response": []
     },
     {
-      "name": "12 - GET Estadísticas administrador",
+      "name": "13 - GET Estadísticas administrador",
       "request": {
         "method": "GET",
         "header": [
@@ -439,7 +473,7 @@
       "response": []
     },
     {
-      "name": "13 - DELETE Mascota",
+      "name": "14 - DELETE Mascota",
       "request": {
         "method": "DELETE",
         "header": [],
